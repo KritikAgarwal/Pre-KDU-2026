@@ -9,7 +9,7 @@ public class Part3 {
 
             HashMap<String, Integer> countMap = new HashMap<>();
             while (scanner.hasNextLine()) {
-                String line = scanner.nextLine().trim();
+                String line = scanner.nextLine().strip();
                 String[] itemlist = line.split(",");
 
                 for (String item : itemlist) {
