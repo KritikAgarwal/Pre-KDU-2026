@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Pomodoro Timer</h1>
+
+    <div id="timer">25:00</div>
+
+    <div class="buttons">
+      <button class="start " onclick="startTimer()">Start</button>
+      <button class="pause " onclick="pauseTimer()">Pause</button>
+      <button class="reset " onclick="resetTimer()">Reset</button>
+    </div>
+
+    <div class="custom-time">
+      <input type="number" id="minutesInput" placeholder="Minutes" min="1" max="60">
+      <button class="set-btn" onclick="setCustomTime()">Set Timer</button>
+    </div>
+
+    <div class="sessions">
+      Sessions Completed: <span id="sessions">0</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
